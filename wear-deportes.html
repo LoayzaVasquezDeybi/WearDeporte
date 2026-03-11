@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wear Deportes — Distribuidora Mayorista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/deporte.css">
+</head>
+<body>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mobile-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()"><i class="bi bi-x-lg"></i></button>
+  <a href="#nosotros" onclick="closeMob()">Nosotros</a>
+  <a href="#categorias" onclick="closeMob()">Categorías</a>
+  <a href="#productos" onclick="closeMob()">Productos</a>
+  <a href="#marcas" onclick="closeMob()">Marcas</a>
+  <a href="#proceso" onclick="closeMob()">Cómo Comprar</a>
+  <a href="#testimonios" onclick="closeMob()">Clientes</a>
+  <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20hacer%20un%20pedido%20mayorista" target="_blank" style="color:var(--wa)"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+</div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <!-- LOGO -->
+    <a href="wear-deportes.html">
+      <img src="img/Logo pagina/logo.png" alt="Wear Deportes" class="navbar-logo" width="270" height="130" style="filter: brightness(1.2); mix-blend-mode: lighten;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#categorias">Categorías</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#marcas">Marcas</a></li>
+      <li><a href="#proceso">Cómo Comprar</a></li>
+      <li><a href="#testimonios">Clientes</a></li>
+      <li><a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20hacer%20un%20pedido%20mayorista" target="_blank" class="nav-wa"><i class="bi bi-whatsapp"></i>WhatsApp</a></li>
+    </ul>
+    <button class="hamburger" onclick="openMob()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ HERO CAROUSEL ══ -->
+<div id="heroC" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroC" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroC" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroC" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active">
+      <div class="hslide hbg1">
+        <div class="hgrid"></div>
+        <div class="hline"></div>
+        <div class="container hcontent">
+          <div class="row"><div class="col-lg-7">
+            <div class="heyebrow">Distribuidora Mayorista · Temporada 2025</div>
+            <h1 class="htitle">
+              VENDE<br>
+              <span class="tred">MÁS.</span><br>
+              <span class="tgray">COMPRA MEJOR.</span>
+            </h1>
+            <p class="hbody">Accedé a los mejores precios mayoristas en ropa, calzado y equipamiento deportivo. Stock permanente, entrega rápida y atención directa por WhatsApp.</p>
+            <div class="hctas">
+              <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20ver%20el%20cat%C3%A1logo%20mayorista" target="_blank" class="btn-red"><i class="bi bi-whatsapp"></i>Ver Catálogo</a>
+              <a href="#nosotros" class="btn-outline-wh">Conocenos <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div></div>
+        </div>
+        <div class="hbignum">WEAR</div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item">
+      <div class="hslide hbg2 s2">
+        <div class="hgrid"></div>
+        <div class="hline"></div>
+        <div class="container hcontent">
+          <div class="row"><div class="col-lg-7">
+            <div class="heyebrow">Colección Ropa Deportiva · Nuevos Ingresos</div>
+            <h1 class="htitle">
+              ROPA<br>
+              <span class="tred">DEPORTIVA</span><br>
+              <span class="tgray">AL POR MAYOR</span>
+            </h1>
+            <p class="hbody">Remeras, shorts, buzos, camperas y conjuntos. Tallas XS a XXXL disponibles. Pedido mínimo desde 12 unidades con precios mayoristas reales.</p>
+            <div class="hctas">
+              <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20consultar%20precios%20de%20ropa%20deportiva%20mayorista" target="_blank" class="btn-red"><i class="bi bi-whatsapp"></i>Consultar Precios</a>
+              <a href="#categorias" class="btn-outline-wh">Ver Categorías <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div></div>
+        </div>
+        <div class="hbignum">SPORT</div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="carousel-item">
+      <div class="hslide hbg3 s3">
+        <div class="hgrid"></div>
+        <div class="hline"></div>
+        <div class="container hcontent">
+          <div class="row"><div class="col-lg-7">
+            <div class="heyebrow">Para Emprendedores & Distribuidores</div>
+            <h1 class="htitle">
+              TU NEGOCIO<br>
+              <span class="tred">EMPIEZA</span><br>
+              <span class="tgray">AQUÍ</span>
+            </h1>
+            <p class="hbody">Pedidos desde 6 unidades, sin burocracia. Directo al WhatsApp, sin intermediarios. El inicio que tu emprendimiento necesita.</p>
+            <div class="hctas">
+              <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20soy%20emprendedor%20y%20quiero%20informaci%C3%B3n%20de%20precios%20mayoristas" target="_blank" class="btn-red"><i class="bi bi-whatsapp"></i>Soy Emprendedor</a>
+              <a href="#proceso" class="btn-outline-wh">¿Cómo funciona? <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div></div>
+        </div>
+        <div class="hbignum">MAYOR</div>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroC" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroC" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+</div>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker">
+  <div class="ticker-in">
+    <span class="tick-item"><span class="tick-sep"></span>DISTRIBUIDORA MAYORISTA</span>
+    <span class="tick-item"><span class="tick-sep"></span>EQUIPAMIENTO DEPORTIVO</span>
+    <span class="tick-item"><span class="tick-sep"></span>STOCK PERMANENTE</span>
+    <span class="tick-item"><span class="tick-sep"></span>ENVÍOS A TODO EL PAÍS</span>
+    <span class="tick-item"><span class="tick-sep"></span>PEDIDOS POR WHATSAPP</span>
+    <span class="tick-item"><span class="tick-sep"></span>PRECIOS MAYORISTAS</span>
+    <span class="tick-item"><span class="tick-sep"></span>DISTRIBUIDORA MAYORISTA</span>
+    <span class="tick-item"><span class="tick-sep"></span>EQUIPAMIENTO DEPORTIVO</span>
+    <span class="tick-item"><span class="tick-sep"></span>STOCK PERMANENTE</span>
+    <span class="tick-item"><span class="tick-sep"></span>ENVÍOS A TODO EL PAÍS</span>
+    <span class="tick-item"><span class="tick-sep"></span>PEDIDOS POR WHATSAPP</span>
+    <span class="tick-item"><span class="tick-sep"></span>PRECIOS MAYORISTAS</span>
+  </div>
+</div>
+
+<!-- ══ QUIÉNES SOMOS ══ -->
+<section class="sp" style="background:var(--black2);scroll-margin-top:72px;" id="nosotros" style="scroll-margin-top:72px;">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="eyebrow">Quiénes somos</div>
+        <h2 class="stitle">SOMOS TU<br>DISTRIBUIDORA<br><span class="tr">DE CONFIANZA</span></h2>
+        <div class="divr mb-4"></div>
+        <p style="color:rgba(255,255,255,.5);font-size:1rem;line-height:1.85;margin-bottom:28px;">
+          Wear Deportes es una distribuidora mayorista especializada en artículos deportivos. Trabajamos directamente con fabricantes y marcas líderes para ofrecerte los mejores precios del mercado. Nuestro objetivo: que tu negocio crezca.
+        </p>
+        <div class="row g-4 mb-4">
+          <div class="col-6"><div class="about-statbox"><div class="about-num">6+</div><div class="about-lbl">Años en el rubro</div></div></div>
+          <div class="col-6"><div class="about-statbox"><div class="about-num">500+</div><div class="about-lbl">Productos activos</div></div></div>
+          <div class="col-6"><div class="about-statbox"><div class="about-num">200+</div><div class="about-lbl">Clientes activos</div></div></div>
+          <div class="col-6"><div class="about-statbox"><div class="about-num">15</div><div class="about-lbl">Marcas distribuidas</div></div></div>
+        </div>
+        <div>
+          <span class="feature-chip"><i class="bi bi-check-circle-fill"></i>Stock Garantizado</span>
+          <span class="feature-chip"><i class="bi bi-check-circle-fill"></i>Precios Diferenciados</span>
+          <span class="feature-chip"><i class="bi bi-check-circle-fill"></i>Envío Nacional</span>
+          <span class="feature-chip"><i class="bi bi-check-circle-fill"></i>Atención Directa</span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-img">
+          <div class="about-img-bg"></div>
+          <div class="about-img-text">WEAR<br>DEPORTES</div>
+          <div class="about-badge">
+            <strong>6</strong>AÑOS<br>DE EXPERIENCIA
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CATEGORÍAS ══ -->
+<section class="sp" style="background:var(--black2);scroll-margin-top:72px;" id="categorias">
+  <div class="container">
+    <div class="row mb-5 align-items-end">
+      <div class="col-lg-7">
+        <div class="eyebrow">Nuestro </div>
+        <h2 class="stitle">CATEGORÍAS<br>PRINCIPALES</h2>
+        <div class="divr"></div>
+      </div>
+      <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+        <p style="color:rgba(255,255,255,.35);font-size:.88rem;line-height:1.6;">Tocá cualquier categoría para consultar<br>precios y disponibilidad por WhatsApp</p>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-3">
+        <div class="cat-card">
+          <div class="cat-bg-layer cbg1"></div>
+          <div class="cat-icon"><img src="img/Catergorias/Peltoas.png" alt="" width="380" height="400"></div>
+          <div class="cat-overlay-grad"></div>
+          <div class="cat-info">
+            <span class="cat-min">Mín. 3 u.</span>
+            <h3>Pelotas<br></h3>
+            <p>Pelotas para diferentes deportes como fútbol, futsal, vóley, básquet y entrenamiento.</p>
+            <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20consultar%20por%20ropa%20deportiva%20mayorista" target="_blank" class="btn-wa-cat"><i class="bi bi-whatsapp"></i>Consultar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="cat-card">
+          <div class="cat-bg-layer cbg2"></div>
+          <div class="cat-icon"><img src="img/Catergorias/acccesorios deportiuvos.png" alt="" width="380" height="400"></div>
+          <div class="cat-overlay-grad"></div>
+          <div class="cat-info">
+            <span class="cat-min">Mín. 6 pares</span>
+            <h3>Accesorios<br>Deportivo</h3>
+            <p>Productos como canilleras, guantes, infladores, redes, botellas deportivas, muñequeras, entre otros.</p>
+            <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20consultar%20por%20calzado%20deportivo%20mayorista" target="_blank" class="btn-wa-cat"><i class="bi bi-whatsapp"></i>Consultar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="cat-card">
+          <div class="cat-bg-layer cbg3"></div>
+          <div class="cat-icon"><img src="img/Catergorias/Entrenamiento.png" alt="" width="380" height="400"></div>
+          <div class="cat-overlay-grad"></div>
+          <div class="cat-info">
+            <span class="cat-min">Mín. 24 u.</span>
+            <h3>Entrenamiento</h3>
+            <p>Conos, escaleras de agilidad, ligas de resistencia, cronómetros, cuerdas de saltar y material para práctica.</p>
+            <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20consultar%20por%20accesorios%20deportivos%20mayoristas" target="_blank" class="btn-wa-cat"><i class="bi bi-whatsapp"></i>Consultar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="cat-card">
+          <div class="cat-bg-layer cbg4"></div>
+          <div class="cat-icon"><img src="img/Catergorias/Proteccion.png" alt="" width="380" height="400"></div>
+          <div class="cat-overlay-grad"></div>
+          <div class="cat-info">
+            <span class="cat-min">Mín. 6 u.</span>
+            <h3>Protección<br>Deportiva</h3>
+            <p>Rodilleras, coderas, tobilleras, protectores bucales y accesorios para prevenir lesiones deportivas.</p>
+            <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20consultar%20por%20equipamiento%20deportivo%20mayorista" target="_blank" class="btn-wa-cat"><i class="bi bi-whatsapp"></i>Consultar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRODUCTOS ══ -->
+<section class="sp" style="background:var(--black2);scroll-margin-top:72px;" id="productos" style="scroll-margin-top:72px;">
+  <div class="container">
+    <div class="row mb-5 align-items-center">
+      <div class="col">
+        <div class="eyebrow">Más vendidos</div>
+        <h2 class="stitle">PRODUCTOS<br>DESTACADOS</h2>
+        <div class="divr"></div>
+      </div>
+      <div class="col-auto d-flex gap-2">
+        <button class="scroll-btn" onclick="scrollP(-1)"><i class="bi bi-chevron-left"></i></button>
+        <button class="scroll-btn" onclick="scrollP(1)"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="prod-scroll" id="prodS">
+
+      <div class="pcard">
+        <div class="pcard-img pi1"><span>🩳</span><span class="pbadge pb-red">Top Venta</span></div>
+        <div class="pcard-body">
+          <div class="p-brand">Wear Deportes</div>
+          <div class="p-name">Short Running Unisex Dry Fit</div>
+          <div class="d-flex align-items-baseline"><span class="p-price">S/ 28</span><span class="p-unit">/ u. (x12)</span></div>
+          <p class="p-min"><i class="bi bi-box-seam"></i>Mín. 12 u. — Tallas XS a XXL</p>
+          <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20pedir%20Short%20Running%20Unisex%20al%20por%20mayor" target="_blank" class="btn-wa-p"><i class="bi bi-whatsapp fs-6"></i>Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img pi2"><span>👟</span><span class="pbadge pb-blk">Oferta</span></div>
+        <div class="pcard-body">
+          <div class="p-brand">SportFlex</div>
+          <div class="p-name">Zapatilla Training Dama Ultralight</div>
+          <div class="d-flex align-items-baseline"><span class="p-price">S/ 185</span><span class="p-unit">/ par (x6)</span></div>
+          <p class="p-min"><i class="bi bi-box-seam"></i>Mín. 6 pares — Talles 35 al 40</p>
+          <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20pedir%20Zapatilla%20Training%20Dama%20al%20por%20mayor" target="_blank" class="btn-wa-p"><i class="bi bi-whatsapp fs-6"></i>Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img pi3"><span>👕</span><span class="pbadge pb-wa">Nuevo</span></div>
+        <div class="pcard-body">
+          <div class="p-brand">ActiveLine</div>
+          <div class="p-name">Remera Dry Fit Hombre Slim Cut</div>
+          <div class="d-flex align-items-baseline"><span class="p-price">S/ 19</span><span class="p-unit">/ u. (x12)</span></div>
+          <p class="p-min"><i class="bi bi-box-seam"></i>Mín. 12 u. — Tallas S a XXXL</p>
+          <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20pedir%20Remera%20Dry%20Fit%20Hombre%20al%20por%20mayor" target="_blank" class="btn-wa-p"><i class="bi bi-whatsapp fs-6"></i>Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img pi4"><span>⚽</span><span class="pbadge pb-red">Best Seller</span></div>
+        <div class="pcard-body">
+          <div class="p-brand">ProSport</div>
+          <div class="p-name">Pelota Fútbol N°5 PVC Premier</div>
+          <div class="d-flex align-items-baseline"><span class="p-price">S/ 52</span><span class="p-unit">/ u. (x6)</span></div>
+          <p class="p-min"><i class="bi bi-box-seam"></i>Mín. 6 u. — Colores surtidos</p>
+          <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20pedir%20Pelota%20F%C3%BAtbol%20al%20por%20mayor" target="_blank" class="btn-wa-p"><i class="bi bi-whatsapp fs-6"></i>Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img pi1"><span>🎒</span><span class="pbadge pb-wa">Nuevo</span></div>
+        <div class="pcard-body">
+          <div class="p-brand">TrailGear</div>
+          <div class="p-name">Mochila Deportiva 25L Resistente</div>
+          <div class="d-flex align-items-baseline"><span class="p-price">S/ 68</span><span class="p-unit">/ u. (x6)</span></div>
+          <p class="p-min"><i class="bi bi-box-seam"></i>Mín. 6 u. — Negro, azul, rojo</p>
+          <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20pedir%20Mochila%20Deportiva%2025L%20al%20por%20mayor" target="_blank" class="btn-wa-p"><i class="bi bi-whatsapp fs-6"></i>Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img pi2"><span>🥾</span><span class="pbadge pb-red">Top Venta</span></div>
+        <div class="pcard-body">
+          <div class="p-brand">RunMax</div>
+          <div class="p-name">Zapatilla Running Hombre Pro</div>
+          <div class="d-flex align-items-baseline"><span class="p-price">S/ 210</span><span class="p-unit">/ par (x6)</span></div>
+          <p class="p-min"><i class="bi bi-box-seam"></i>Mín. 6 pares — Talles 39 al 44</p>
+          <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20pedir%20Zapatilla%20Running%20Hombre%20al%20por%20mayor" target="_blank" class="btn-wa-p"><i class="bi bi-whatsapp fs-6"></i>Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ MARCAS ══ -->
+<section class="sp-sm" style="background:var(--black2);scroll-margin-top:72px;" id="marcas">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="eyebrow justify-content-center">Trabajamos con</div>
+      <h2 class="stitle">MARCAS QUE<br>DISTRIBUIMOS</h2>
+      <div class="divr mx-auto" style="background:linear-gradient(90deg,transparent,var(--red),transparent);width:80px;margin-left:auto;margin-right:auto;"></div>
+    </div>
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-md-4 col-lg-2"><div class="brand-box">WALON</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="brand-box">MYKASA</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="brand-box">MINIBALL</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="brand-box">WEARDEPORTE</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="brand-box">ONEBALL</div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="brand-box">NIKE</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESO ══ -->
+<section class="sp" style="background:var(--black2);scroll-margin-top:72px;" id="proceso" style="scroll-margin-top:72px;">
+  <div class="container">
+    <div class="row mb-5 justify-content-center text-center">
+      <div class="col-lg-6">
+        <div class="eyebrow justify-content-center">Simple y rápido</div>
+        <h2 class="stitle">¿CÓMO HACER<br>TU PEDIDO?</h2>
+        <div class="divr mx-auto" style="background:linear-gradient(90deg,transparent,var(--red),transparent);width:80px;margin-left:auto;margin-right:auto;"></div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="step-box">
+          <div class="step-num-bg">01</div>
+          <div class="step-icon"><i class="bi bi-whatsapp" style="color:var(--wa)"></i></div>
+          <h5>Escribinos</h5>
+          <p>Contactanos por WhatsApp indicando los productos que te interesan y la cantidad aproximada que necesitás.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="step-box">
+          <div class="step-num-bg">02</div>
+          <div class="step-icon"><i class="bi bi-file-earmark-text" style="color:var(--red)"></i></div>
+          <h5>Recibís Presupuesto</h5>
+          <p>Te enviamos la lista de precios mayoristas actualizada con disponibilidad de stock en menos de 24 hs.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="step-box">
+          <div class="step-num-bg">03</div>
+          <div class="step-icon"><i class="bi bi-credit-card" style="color:var(--black)"></i></div>
+          <h5>Confirmás y Pagás</h5>
+          <p>Aceptamos transferencia, Yape, Plin y efectivo. Con el pago confirmado tu pedido entra en preparación.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="step-box">
+          <div class="step-num-bg">04</div>
+          <div class="step-icon"><i class="bi bi-truck" style="color:var(--red)"></i></div>
+          <h5>Recibís Mercadería</h5>
+          <p>Despachamos en 24/48 hs con envío a todo el país. También retirás en depósito sin costo adicional.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20comenzar%20a%20comprar%20al%20por%20mayor" target="_blank" class="btn-red" style="font-size:1.05rem;padding:17px 44px;">
+        <i class="bi bi-whatsapp fs-5"></i> Empezar Mi Pedido
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIOS ══ -->
+<section class="sp" style="background:var(--black2);scroll-margin-top:72px;" id="testimonios">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <div class="eyebrow">Lo que dicen nuestros clientes</div>
+        <h2 class="stitle">CLIENTES QUE<br>CONFÍAN EN<br><span class="tr">NOSOTROS</span></h2>
+        <div class="divr"></div>
+      </div>
+    </div>
+    <div id="testC" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testC" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testC" data-bs-slide-to="1"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="test-box">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">Llevo 2 años comprando a Wear Deportes y la calidad del producto y el precio mayorista son imbatibles. Mis ventas crecieron un 40%.</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="test-av">MR</div>
+                  <div><div class="test-name">María Ríos</div><div class="test-role">Tienda Deportiva, Lima</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="test-box">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">Empecé como emprendedor con poco capital y Wear Deportes me dio los precios justos para arrancar. Hoy tengo mi propio local.</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="test-av">CF</div>
+                  <div><div class="test-name">Carlos Flores</div><div class="test-role">Emprendedor, Arequipa</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="test-box">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">La atención por WhatsApp es inmediata y los pedidos siempre llegan completos y en tiempo. Muy recomendable para distribuidores.</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="test-av">LP</div>
+                  <div><div class="test-name">Lucía Paredes</div><div class="test-role">Distribuidora, Trujillo</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="test-box">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">El stock es siempre abundante. Nunca me quedé sin mercadería para una temporada alta. Eso es vital para mi negocio.</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="test-av">JP</div>
+                  <div><div class="test-name">Jorge Pumacahua</div><div class="test-role">Mayorista, Cusco</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="test-box">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">Compro calzado hace 3 años. La relación precio-calidad es excelente y los despachos siempre puntuales. 100% recomendado.</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="test-av">SV</div>
+                  <div><div class="test-name">Sandra Villanueva</div><div class="test-role">Zapatería, Piura</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="test-box">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">El proceso es muy simple: WhatsApp, confirmo, pago y recibo. Sin complicaciones. Perfecto para quien está empezando.</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="test-av">RM</div>
+                  <div><div class="test-name">Rodrigo Medina</div><div class="test-role">Emprendedor, Lima</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<section class="cta-sec">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-7">
+        <h2>EMPEZÁ A<br><span>VENDER HOY</span></h2>
+        <p>Sumate a más de 200 distribuidores y emprendedores que ya confían en Wear Deportes para hacer crecer su negocio.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20comenzar%20a%20comprar%20al%20por%20mayor.%20%C2%BFMe%20pod%C3%A9s%20enviar%20informaci%C3%B3n%3F" target="_blank" class="btn-wa-cta">
+          <i class="bi bi-whatsapp fs-4"></i>Quiero ser Distribuidor
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <svg height="48" viewBox="0 0 290 80" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(0,3)">
+            <circle cx="36" cy="36" r="31" fill="none" stroke="#d62828" stroke-width="6" stroke-dasharray="145 60" stroke-linecap="round"/>
+            <circle cx="36" cy="36" r="31" fill="none" stroke="#d62828" stroke-width="6" stroke-dasharray="38 167" stroke-dashoffset="-145" stroke-linecap="round" opacity="0.2"/>
+            <polyline points="18,27 27,50 36,34 45,50 54,27" fill="none" stroke="#d62828" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <text x="80" y="48" font-family="Barlow Condensed,sans-serif" font-weight="900" font-size="32" fill="#ffffff" letter-spacing="1">WEAR</text>
+          <circle cx="190" cy="42" r="3.5" fill="#d62828"/>
+          <text x="80" y="64" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="15" fill="#d62828" letter-spacing="5">DEPORTES</text>
+          <text x="80" y="77" font-family="Georgia,serif" font-style="italic" font-size="8.5" fill="rgba(255,255,255,0.28)" letter-spacing="1">— Pasión por el Deporte —</text>
+        </svg>
+        <p class="ft-tagline">Distribuidora mayorista especializada en artículos deportivos. Para emprendedores y distribuidores de todo el país.</p>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <div class="ft-heading">Navegación</div>
+        <ul class="ft-links">
+          <li><a href="#nosotros"><i class="bi bi-chevron-right"></i>Nosotros</a></li>
+          <li><a href="#categorias"><i class="bi bi-chevron-right"></i>Categorías</a></li>
+          <li><a href="#productos"><i class="bi bi-chevron-right"></i>Productos</a></li>
+          <li><a href="#marcas"><i class="bi bi-chevron-right"></i>Marcas</a></li>
+          <li><a href="#proceso"><i class="bi bi-chevron-right"></i>Cómo Comprar</a></li>
+          <li><a href="#testimonios"><i class="bi bi-chevron-right"></i>Clientes</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <div class="ft-heading">Categorías</div>
+        <ul class="ft-links">
+          <li><a href="https://wa.me/51922235453?text=Ropa%20deportiva%20mayorista" target="_blank"><i class="bi bi-chevron-right"></i>Ropa Deportiva</a></li>
+          <li><a href="https://wa.me/51922235453?text=Calzado%20deportivo%20mayorista" target="_blank"><i class="bi bi-chevron-right"></i>Calzado</a></li>
+          <li><a href="https://wa.me/51922235453?text=Accesorios%20deportivos%20mayorista" target="_blank"><i class="bi bi-chevron-right"></i>Accesorios</a></li>
+          <li><a href="https://wa.me/51922235453?text=Equipamiento%20deportivo%20mayorista" target="_blank"><i class="bi bi-chevron-right"></i>Equipamiento</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="ft-heading">Contacto Directo</div>
+        <div class="ft-contact">
+          <div class="ft-num"><i class="bi bi-whatsapp me-2"></i>+51 922 235 453</div>
+          <p class="ft-hours">Lunes a Sábado · 9:00 am — 8:00 pm</p>
+          <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20hacer%20un%20pedido%20mayorista" target="_blank" class="btn-wa-ft"><i class="bi bi-whatsapp"></i>Escribir ahora</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>© 2025 Wear Deportes — Distribuidora Mayorista Deportiva. Todos los derechos reservados.</p>
+      <p>Precios sujetos a cambio. Consultar disponibilidad.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<div class="wafloat">
+  <span class="wflabel">¡Escribinos ahora!</span>
+  <a href="https://wa.me/51922235453?text=Hola%20Wear%20Deportes%2C%20quiero%20hacer%20un%20pedido%20mayorista" target="_blank" class="wfbtn">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener('scroll',()=>{
+    document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+  });
+  function openMob(){document.getElementById('mobMenu').classList.add('open');document.body.style.overflow='hidden';}
+  function closeMob(){document.getElementById('mobMenu').classList.remove('open');document.body.style.overflow='';}
+  function scrollP(d){document.getElementById('prodS').scrollBy({left:d*290,behavior:'smooth'});}
+</script>
+</body>
+</html>

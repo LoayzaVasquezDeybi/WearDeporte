@@ -1,0 +1,14 @@
+.card {
+    max-width: 250px; /* ancho de la card */
+    margin: auto; /* centra la card */
+}
+
+.card img{
+    height: 180px; /* altura de la imagen */
+    object-fit: cover; /* evita que se deforme */
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    }
